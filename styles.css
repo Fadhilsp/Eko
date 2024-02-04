@@ -1,5 +1,5 @@
 
-/* General */
+/* -------- General --------  */
 body {
     background-color: rgb(28, 29, 29);
     font-family: Arial, sans-serif;
@@ -44,6 +44,9 @@ a {
     width: 200px; /* Atur lebar gambar sesuai kebutuhan */
     height: 200px; /* Atur tinggi gambar sesuai kebutuhan */
 }
+/* -------- General Finisih --------  */
+
+/* -------- Header Navigasi -------- */
 nav {
     background-color: #333;
     padding: 10px;
@@ -59,8 +62,9 @@ li {
     display: inline;
     margin-right: 10px;
 }
+/* -------- Header Navigasi Finisih -------- */
 
-/* Ini adalah CSS untuk Page Contact Me */
+/* -------- Contact Me --------  */
 .contacttome {
     width: 80%;
     margin: 0 auto;
@@ -70,7 +74,6 @@ li {
     margin-top: 50px;
     border-radius: 5px;
 }
-
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -98,4 +101,49 @@ button {
 button:hover {
     background-color: #45a049;
 }
-/* Berakhir */
+/* -------- Contact Me Finish --------  */
+
+/* -------- Gallery --------  */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    cursor: pointer;
+}
+/* -------- Gallery Berakhir -------- */
