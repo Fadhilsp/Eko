@@ -5,7 +5,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Tambahkan ini untuk menghindari scroll horizontal */
 }
+
 h1 {
     color: rgb(255, 255, 255);
     font-family: verdana;
@@ -46,10 +48,27 @@ a {
 }
 /* -------- General Finisih --------  */
 
+/* -------- HEADER --------  */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+header h1 {
+    margin: 0;
+}
+header h3 {
+    margin: 5px 0;
+}
+/* -------- HEADER FINISIH --------  */
+
 /* -------- Header Navigasi -------- */
 nav {
     background-color: #333;
     padding: 10px;
+    width: 100%;
 }
 ul {
     list-style-type: none;
@@ -57,6 +76,7 @@ ul {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    
 }
 li {
     display: inline;
@@ -147,3 +167,13 @@ button:hover {
     cursor: pointer;
 }
 /* -------- Gallery Berakhir -------- */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position:relative;
+    bottom: 5px;
+
+}

@@ -5,8 +5,7 @@ function openImage(imageSrc, title, artist) {
     overlay.innerHTML = `
         <img src="${imageSrc}" alt="${title}">
         <div class="image-info">
-            <h3>${title}</h3>
-            <p>${artist}</p>
+
         </div>
     `;
 
