@@ -1,13 +1,11 @@
 
-/* -------- General --------  */
-body {
+body {  /* -------- GENERAL.HTML --------  */
     background-color: rgb(28, 29, 29);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Tambahkan ini untuk menghindari scroll horizontal */
 }
-
 h1 {
     color: rgb(255, 255, 255);
     font-family: verdana;
@@ -23,7 +21,7 @@ h3 {
     font-size: 100%;
 }
 p {
-    color: red;
+    color: rgb(0, 0, 0);
     font-family: arial;
     padding: 50px;
     border: 1px solid black;
@@ -34,27 +32,11 @@ a {
     color: white;
     font-weight: bold;
 }   
-
-.img1 {    
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 100px;
-    margin-right: 20px;
-    border: 5px solid gray;
-    border-radius: 10%; /* Menggunakan nilai 50% untuk membuatnya bulat */
-    width: 200px; /* Atur lebar gambar sesuai kebutuhan */
-    height: 200px; /* Atur tinggi gambar sesuai kebutuhan */
-}
-/* -------- General Finisih --------  */
-
-/* -------- HEADER --------  */
-header {
+header {    /* -------- Header --------  */
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
-
 }
 header h1 {
     margin: 0;
@@ -62,10 +44,7 @@ header h1 {
 header h3 {
     margin: 5px 0;
 }
-/* -------- HEADER FINISIH --------  */
-
-/* -------- Header Navigasi -------- */
-nav {
+nav {   /* --------Navigasi -------- */
     background-color: #333;
     padding: 10px;
     width: 100%;
@@ -76,54 +55,22 @@ ul {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    
 }
 li {
     display: inline;
     margin-right: 10px;
 }
-/* -------- Header Navigasi Finisih -------- */
-
-/* -------- Contact Me --------  */
-.contacttome {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-    border-radius: 5px;
-}
-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-button {
-    background-color: #4caf50;
+footer {/* -------- Footer -------- */
+    background-color: #333;
     color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    position:relative;
+    bottom: 5px;
 }
-button:hover {
-    background-color: #45a049;
-}
-/* -------- Contact Me Finish --------  */
 
-/* -------- Gallery --------  */
+
+/* -------- PORTFOLIO.HTML -------- */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -166,14 +113,61 @@ button:hover {
     object-fit: contain;
     cursor: pointer;
 }
-/* -------- Gallery Berakhir -------- */
-
-footer {
-    background-color: #333;
+/* -------- RESUME.HTML --------  */
+#img1 {
+    display: block; /* Membuat gambar menjadi elemen block */
+    margin: 0 auto; /* Memberikan margin otomatis secara horizontal */
+    padding-bottom: 50px ;
+}
+/* -------- CONTACTME.HTML --------  */
+.contacttome {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    border-radius: 5px;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #4caf50;
     color: #fff;
-    text-align: center;
-    padding: 15px;
-    position:relative;
-    bottom: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
 
+/* -------- THANKYOU.HTML --------  */
+.flex-container {
+    height: 100; /* Menggunakan 100% dari tinggi viewport */
+    display: flex;
+    flex-direction: column; /* Mengatur flex container untuk mengatur anak-anaknya dalam kolom */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Mengatur teks di tengah secara horizontal */
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+    padding-bottom: 100px;
 }

@@ -23,27 +23,29 @@
         </header>   <!-- Harus Sama Sampai disini -->
         <main> <!-- Konten halaman -->
             <h2>Contact Me</h2>    
+            <a href="#footer">ini adalah jump ke footer</a>
             <div class="contacttome">
-                <form>
+                <form action="thankyou.html">
                     <label for="name">Nama:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" placeholder="Samuel Hutapea" id="name" name="name" required>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" placeholder="emailmu@gmail.com" id="email" name="email" required>
                     <label for="message">Pesan:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" placeholder="tulis keluh kesah kamu disini" name="message" rows="4" required></textarea>
                     <button type="submit">Kirim</button>
                 </form>
             </div>
             <br>
             <p>
-            <a href="https://api.whatsapp.com/send?phone=+628117660105&text=Hi"><button>Whatssapp</button></a>
-            <a href="https://www.google.com"><button>klik ini menuju ke google</button></a>
+            <a href="https://api.whatsapp.com/send?phone=+628117660105&text=Hi" target="_blank"><button>Whatssapp</button></a>
+            <a href="https://www.google.com" target="_blank"><button>klik ini menuju ke google</button></a>
             <a href="bio.html"><button>menuju ke bio saya</button></a>
             <a href="navigasi.html"><button>navigasi</button></a><br>
             </p>
-        <footer>
+        <footer id="footer">
             © Copyright by Eko Samuel <br>
             Website powered by <a href="https:www.github.com/fadhilsp">Fadhilsp</a>
         </footer>
     </body>
 </html>
+    
